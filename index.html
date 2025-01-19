@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Best AI SaaS Starter | Find Your Perfect SaaS Foundation</title>
+    <title>Best SaaS Starter | Find Your Perfect SaaS Foundation</title>
     <meta name="description" content="Discover the best SaaS starter kits, boilerplates, and frameworks. Find free open-source and production-ready options to accelerate your SaaS development with Next.js, React.js, Laravel, Remix, and more.">
     <meta name="keywords" content="SaaS starter kit, SaaS boilerplate, open source SaaS, free SaaS starter, Next.js SaaS, React.js SaaS, Laravel SaaS, Remix SaaS, Node.js SaaS, production-ready SaaS, SaaS framework, SaaS template">
      <meta name="robots" content="index, follow">
@@ -14,27 +14,25 @@
     <meta property="og:title" content="Best SaaS Starter | Find Your Perfect SaaS Foundation">
     <meta property="og:description" content="Discover the best SaaS starter kits, boilerplates, and frameworks. Find free open-source and production-ready options to accelerate your SaaS development with Next.js, React.js, Laravel, Remix, and more.">
     <meta property="og:type" content="website">
-     <meta property="og:url" content="https://bestsaasstarter.org/"> <!-- Replace with your actual URL -->
-
-     <meta property="og:image" content="https://bestsaasstarter.org/images/og-image.png"> <!-- Optional: Add a social sharing image -->
-    <meta property="og:image:alt" content="Best SaaS Starter Logo" />
+     <meta property="og:url" content="https://bestsaasstarter.org/">
+    <meta property="og:image" content="https://bestsaasstarter.org/images/og-image.png">
+     <meta property="og:image:alt" content="Best SaaS Starter Logo" />
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Best SaaS Starter | Find Your Perfect SaaS Foundation">
     <meta name="twitter:description" content="Discover the best SaaS starter kits, boilerplates, and frameworks. Find free open-source and production-ready options to accelerate your SaaS development with Next.js, React.js, Laravel, Remix, and more.">
-
-    <meta name="twitter:image" content="https://bestsaasstarter.org/images/twitter-card.png"> <!-- Optional: Add a Twitter Card image -->
+   <meta name="twitter:image" content="https://bestsaasstarter.org/images/twitter-card.png">
         <meta name="twitter:image:alt" content="Best SaaS Starter Logo" />
 
 
-   <link rel="canonical" href="https://bestsaasstarter.org/"> <!-- Replace with your actual URL -->
-    <!-- Favicon (Optional) -->
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- Replace with your favicon path -->
+   <link rel="canonical" href="https://bestsaasstarter.org/">
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
     <style>
-        /* CSS Styling (Embedded) */
+       /* CSS Styling (Embedded) */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -95,16 +93,9 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-         .starter-item-free {
-             border: 1px solid #dee2e6;
-            padding: 20px;
-            margin: 20px;
-            width: calc(33.33% - 40px);
-            background-color: white;
-             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          }
-        .starter-item h3{
+
+
+         .starter-item h3{
            margin-bottom: 10px;
         }
         .starter-item p{
@@ -117,6 +108,7 @@
           .starter-item ul li{
              margin-bottom: 5px;
         }
+
         .cta-button {
             display: inline-block;
             padding: 12px 24px;
@@ -133,36 +125,64 @@
             text-align: center;
             margin-top: 20px;
         }
-        .free-starters-list{
-            margin-top: 30px;
-            display: flex;
-             flex-wrap: wrap;
-            justify-content: space-around;
-        }
-         .free-starter-item{
-            border: 1px solid #dee2e6;
-            padding: 20px;
-            margin: 20px;
-            width: calc(33.33% - 40px);
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            .filter-container{
+             margin-bottom: 20px;
+            text-align: right;
+         }
+             #filterInput{
+                  padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+
+
+     /* Styling for Free Starters Section */
+        .free-starters-grid {
+             margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
-          .free-starter-item ul{
-              padding-left: 20px;
+         .free-starter-card {
+             border: 1px solid #dee2e6;
+             padding: 15px;
+             background-color: white;
+             border-radius: 8px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+             display: flex;
+             flex-direction: column;
+            transition: transform 0.2s ease;
+         }
+
+         .free-starter-card:hover {
+            transform: translateY(-5px);
         }
-          .free-starter-item ul li{
+
+        .free-starter-card h3 {
+             font-size: 1.3rem;
+             margin-bottom: 10px;
+              text-align: center;
+            }
+       .free-starter-card ul{
+           padding: 0;
+             list-style: none;
+           overflow-y: auto;
+        max-height: 200px;
+      }
+        .free-starter-card li {
              margin-bottom: 5px;
-            list-style-type: none;
               white-space: nowrap;
                 overflow: hidden;
-              text-overflow: ellipsis;
+               text-overflow: ellipsis;
           }
-           .free-starter-item ul li a {
+           .free-starter-card li a {
                  text-decoration: none;
-                 color: #007bff
+                 color: #007bff;
+
            }
+
+
         footer {
             text-align: center;
             margin-top: 50px;
@@ -170,6 +190,30 @@
             font-size: 0.9em;
             background-color: #e9ecef;
         }
+
+        .pagination {
+             display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+           .pagination button {
+               padding: 10px 15px;
+               margin: 0 5px;
+                border: 1px solid #ddd;
+                 border-radius: 5px;
+                background-color: white;
+                cursor: pointer;
+                 transition: background-color 0.3s ease;
+           }
+        .pagination button:hover,
+          .pagination button:disabled {
+              background-color: #f0f0f0;
+         }
+
+        .pagination button:disabled {
+          cursor: default;
+         }
     </style>
 </head>
 <body>
@@ -268,11 +312,18 @@
          </div>
       </div>
 
-    <h2 class="section-title">Free SaaS Starters</h2>
+
+        <h2 class="section-title">Free SaaS Starters</h2>
         <p> Explore these free, open-source SaaS starter kits and boilerplates.</p>
-        <div class="free-starters-list" id="free-starters-list">
-        <!-- Free starters will be dynamically added here -->
-       </div>
+            <div class="filter-container">
+               <input type="text" id="filterInput" placeholder="Filter Starters..." >
+             </div>
+         <div class="free-starters-grid" id="free-starters-grid">
+            <!-- Free starters will be dynamically added here -->
+          </div>
+           <div class="pagination" id="pagination-container">
+        <!-- Pagination buttons will be added here dynamically -->
+    </div>
 
 
       <div class="browse-button">
@@ -287,7 +338,7 @@
     </footer>
     <script>
         // Basic JavaScript (Embedded)
-          console.log("Best SaaS Starter Landing Page Loaded!");
+        console.log("Best SaaS Starter Landing Page Loaded!");
 
          const freeStartersData = {
             "remix saas": [
@@ -495,27 +546,97 @@
           ]
          };
 
-      const freeStartersContainer = document.getElementById('free-starters-list');
+        const freeStartersGrid = document.getElementById('free-starters-grid');
+        const filterInput = document.getElementById('filterInput');
+        const paginationContainer = document.getElementById('pagination-container');
+        const cardsPerPage = 12;
+        let currentPage = 1;
+        let filteredData = {};
+    let allDataKeys = Object.keys(freeStartersData)
 
-    for (const category in freeStartersData) {
-      const categoryDiv = document.createElement('div');
-      categoryDiv.classList.add('free-starter-item');
-      categoryDiv.innerHTML = `<h3>${category}</h3>`;
-       const ul = document.createElement("ul");
+    function createCards(data) {
+      freeStartersGrid.innerHTML = '';
 
-        freeStartersData[category].forEach(url => {
+      for (const category in data) {
+        const card = document.createElement('div');
+        card.classList.add('free-starter-card');
+        card.innerHTML = `<h3>${category}</h3>`;
+        const ul = document.createElement("ul");
+
+        data[category].forEach(url => {
             const li = document.createElement("li");
-           const a = document.createElement('a');
-           a.href = url
+            const a = document.createElement('a');
+            a.href = url
             a.textContent = url;
             li.appendChild(a);
-             ul.appendChild(li)
+            ul.appendChild(li)
         });
-      categoryDiv.appendChild(ul)
-      freeStartersContainer.appendChild(categoryDiv);
-
+         card.appendChild(ul)
+        freeStartersGrid.appendChild(card);
+    }
     }
 
+
+    function filterAndPaginate(){
+          const searchTerm = filterInput.value.toLowerCase().trim();
+            filteredData = {};
+           if (searchTerm === ''){
+              filteredData = freeStartersData;
+            }else{
+              for (const category in freeStartersData) {
+                const filteredUrls = freeStartersData[category].filter(url =>
+                url.toLowerCase().includes(searchTerm) || category.toLowerCase().includes(searchTerm)
+              );
+            if (filteredUrls.length > 0) {
+                filteredData[category] = filteredUrls;
+               }
+            }
+        }
+
+     renderPagination()
+         updateCards()
+    }
+
+        function updateCards() {
+          const startIndex = (currentPage - 1) * cardsPerPage;
+           const endIndex = startIndex + cardsPerPage;
+          let paginatedData = {}
+            let dataKeys = Object.keys(filteredData)
+              dataKeys = dataKeys.slice(startIndex,endIndex);
+               for (const dataKey of dataKeys){
+                 paginatedData[dataKey] = filteredData[dataKey]
+              }
+             createCards(paginatedData)
+           }
+
+    function renderPagination() {
+        paginationContainer.innerHTML = '';
+         let dataKeys = Object.keys(filteredData)
+
+         const totalPages = Math.ceil(dataKeys.length / cardsPerPage);
+
+          for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement('button');
+            button.textContent = i;
+              button.disabled = i === currentPage;
+            button.addEventListener('click', () => {
+               currentPage = i;
+               updateCards()
+              renderPagination();
+              });
+             paginationContainer.appendChild(button);
+          }
+    }
+
+    // Initial rendering
+   filterAndPaginate()
+
+
+     filterInput.addEventListener('input', () => {
+        currentPage = 1;
+        filterAndPaginate()
+
+      });
     </script>
 
 </body>
