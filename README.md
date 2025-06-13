@@ -1,3 +1,9 @@
+https://github.com/smirnov-am/awesome-saas-boilerplates
+
+https://github.com/wanghaisheng/best-X-dataset-in-github/tree/main
+
+
+
 好的，我们来构建一个更完整的设计方案，包括核心页面设计、用户流程以及一个清晰的URL结构规划。
 
 **核心理念：** 打造一个对开发者友好、信息丰富、易于导航和比较的SaaS Starter Kit中心。
